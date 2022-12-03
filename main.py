@@ -59,7 +59,7 @@ def get_memorial_days_count():
     print('没有设置 START_DATE')
     return 0
   delta = today - datetime.strptime(start_date, "%Y-%m-%d")
-  return delta.days
+  return delta.days + 1
 
 # 各种倒计时
 def get_counter_left(aim_date):
